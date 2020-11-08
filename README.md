@@ -8,13 +8,13 @@ This project includes a Pytorch implementation of Relation Networks and a datase
 
 #### Relation Networks
 
-<p align="center"><img src="https://github.com/ttok0s7u2n5/ML2_proj/blob/main/IMG_0182.jpg" width="500" height="250"/></p>
+<p align="center"><img src="https://github.com/ttok0s7u2n5/ML2_proj/blob/master/IMG_0182.jpg" width="500" height="250"/></p>
 
 The above image is an illustrative example from the CLEVR dataset of relational reasoning. An image containing four objects is shown alongside non-relational and relational questions. The relational question requires explicit reasoning about the relations between the four objects in the image, whereas the non-relational question requires reasoning about the attributes of a particular object. Thinking and reasoning with relational questions is what the relation networks process.
 
 Relation network is a neural network with a structure primed for relational reasoning. To be more specific, RN is a composite function:
 
-<p align="center"><img src="https://github.com/ttok0s7u2n5/ML2_proj/blob/main/IMG_0183.jpg" width="300" height="135"/></p>
+<p align="center"><img src="https://github.com/ttok0s7u2n5/ML2_proj/blob/master/IMG_0183.jpg" width="300" height="135"/></p>
 
 where the input is a set of "objects" <img src="https://render.githubusercontent.com/render/math?math=O = \{\ o_1, o_2, ...,o_n\}\\, o_i \in \mathbb{R}^m"> is the ith object, and <img src="https://render.githubusercontent.com/render/math?math=f_\phi"> and <img src="https://render.githubusercontent.com/render/math?math=g_\theta"> are functions with parameters <img src="https://render.githubusercontent.com/render/math?math=\phi"> and <img src="https://render.githubusercontent.com/render/math?math=\theta">, respectively. In the paper, the two functions are MLPs(Multi layer perceptron), and the parameters are learnable synaptic weights, making RNs end-to-end differentiable.
 
@@ -55,7 +55,7 @@ You can understand what it means by watching this video
 
 ### Applying Relation Network
 
-<p align="center"><img src="https://github.com/ttok0s7u2n5/ML2_proj/blob/main/IMG_0184.jpg" width="520" height="280"/></p>
+<p align="center"><img src="https://github.com/ttok0s7u2n5/ML2_proj/blob/master/IMG_0184.jpg" width="520" height="280"/></p>
 
 Unlike other neural network, RN (Relation Network) do not explicitly operate on images or natural language. The learning process induces upstream processing, comprised of conventional neural network modules, to produce a set of useful "objects" from distributed representations.
 
@@ -99,7 +99,7 @@ Sort-of-CLEVR is simplified version of CLEVR.This is composed of 10000 images an
 
 For example, with the sample image shown below, we can generate non-relational and relational questions and following answers like:
 
-<p align="center"><img src="https://github.com/ttok0s7u2n5/ML2_proj/blob/main/0.png" width="300" height="300"/></p>
+<p align="center"><img src="https://github.com/ttok0s7u2n5/ML2_proj/blob/master/0.png" width="300" height="300"/></p>
 
 < Non-relational Questions >
 1. What is the shape of the red object? => circle
